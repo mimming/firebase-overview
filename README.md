@@ -1,6 +1,6 @@
 # Firebase in 10 minutes
 
-Firebase makes building realtime stuff easy. Jenny is going to show you how in about 10 minutes, with slide and demos.
+Firebase makes building realtime stuff easy. Jenny is going to show you how in about 10 minutes, with slides and demos.
 
 Slides live on [mimming.com](https://mimming.com/presos/synchronizing-state/)
 
