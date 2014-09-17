@@ -2,7 +2,7 @@
 
 Here's the presentation that [Jenny Tong](https://mimming.com) gave at [neoHack](https://www.eventbrite.com/e/neohack14-tickets-12557544955). It's about Firebase.
 
-You can see it live at http://mimming.com/presos/2014-09-06-neohacks/#/
+You can see it live at https://mimming.com/presos/firebase-in-10-minutes
 
 ## About the deck
 
