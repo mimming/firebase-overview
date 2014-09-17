@@ -1,6 +1,10 @@
 # Firebase @ neoHack14
 
-Here's the presentation that [Jenny Tong](https://mimming.com) gave at [neoHack](https://www.eventbrite.com/e/neohack14-tickets-12557544955). It's about Firebase.
+Here's a brief presentation that [Jenny Tong](https://mimming.com) has given about [Firebase](https://firebase.com).
+
+It has been presented at:
+
+  - [neoHack14](https://www.eventbrite.com/e/neohack14-tickets-12557544955) - [slides](https://github.com/mimming/firebase-in-10-minutes/releases/tag/neoHacks14)
 
 You can see it live at https://mimming.com/presos/firebase-in-10-minutes
 
