@@ -1,12 +1,11 @@
-# Firebase @ neoHack14
+# Firebase in 10 minutes
 
-Here's a brief presentation that [Jenny Tong](https://mimming.com) has given about [Firebase](https://firebase.com).
+Firebase makes building realtime stuff easy. Jenny is going to show you how in about 10 minutes, with slide and demos.
 
-It has been presented at:
+Slides live on [mimming.com](https://mimming.com/presos/synchronizing-state/)
 
-  - [neoHack14](https://www.eventbrite.com/e/neohack14-tickets-12557544955) - [slides](https://github.com/mimming/firebase-in-10-minutes/releases/tag/neoHacks14)
-
-You can see it live at https://mimming.com/presos/firebase-in-10-minutes
+## Presented at
+- [neoHack14](http://www.meetup.com/Women-Who-Code-SF/events/182497842/?oc=evam) - [slides](https://github.com/mimming/synchronizing-state/releases/tag/whg-2014-09)
 
 ## About the deck
 
