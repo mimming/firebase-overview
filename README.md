@@ -1,11 +1,12 @@
 # Firebase in 10 minutes
 
-Firebase makes building realtime stuff easy. Jenny is going to show you how in about 10 minutes, with slides and demos.
+Firebase makes building realtime stuff easy. Jenny is going to show you how in about 30 minutes with slides, demos, and 
+little bit of live coding.
 
-Slides live on [mimming.com](https://mimming.com/presos/synchronizing-state/)
+Slides live on [mimming.com](https://mimming.com/presos/firebase-in-30-minutes/)
 
 ## Presented at
-- [neoHack14](http://www.meetup.com/Women-Who-Code-SF/events/182497842/?oc=evam) - [slides](https://github.com/mimming/synchronizing-state/releases/tag/whg-2014-09)
+- [Hack Duke](http://www.hackduke.com/tech-talks) on 14 Nov 2014 - [slides](https://github.com/mimming/firebase-in-30-minutes) 
 
 ## About the deck
 
@@ -15,4 +16,4 @@ Forked from the wonderful [reveal.js](https://github.com/hakimel/reveal.js)
 
 MIT licensed
 
-Copyright (C) 2014 Firebase
+Copyright (C) 2014 Google, Inc.
