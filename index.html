@@ -70,6 +70,9 @@
 
     }
 
+    .reveal pre code {
+      font-size: 120%;
+    }
     ul.multicol li {
       display: inline-block;
       width: 400px;
@@ -81,8 +84,8 @@
       width: auto;
       height: auto;
     }
-  </style>
-  <style>
+
+
     .reveal section img {
       max-height: 65%;
     }
@@ -94,159 +97,272 @@
 
 <div class="reveal">
 
-  <!-- Any section element inside of this container is displayed as a slide -->
-  <div class="slides">
-    <section class="center">
-      <h1 style="font-size: 2em">Hello Hack Duke hackers!</h1>
-      <br/>
-      <img src="img/hack-duke-badge.svg" style="width: 200px"><br/>
-      <img src="img/firebase-logo.png" style="height: 100px">
-    </section>
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+<section class="center">
+  <h1 style="font-size: 2em">Hello Hack Duke hackers!</h1>
+  <br/>
+  <img src="img/hack-duke-badge.svg" style="width: 200px"><br/>
+  <img src="img/firebase-logo.png" style="height: 100px">
+</section>
 
-    <section>
-      <img src="img/firebase-logo.png" style="border:none; box-shadow: none; background: none;">
-      <br/> <br/>
+<section>
+  <img src="img/firebase-logo.png" style="border:none; box-shadow: none; background: none;">
+  <br/> <br/>
 
-      <h3>Makes realtime stuff easy</h3>
-    </section>
+  <h3>Makes realtime stuff easy</h3>
+</section>
 
-    <section>
-      <div>
-        <img src="img/jenny.jpg" style="border-radius: 150px; float: left; margin-right: 40px" width="300px">
-        <br/>
+<section>
+  <div>
+    <img src="img/jenny.jpg" style="border-radius: 150px; float: left; margin-right: 40px" width="300px">
+    <br/>
 
-        <h3>Jenny Tong</h3>
-        Developer Advocate
-        <br/>
-        <a href="https://plus.google.com/+JennyMurphy">+JennyMurphy</a><br/><a href="https://twitter.com/baconatedgeek">@BaconatedGeek</a>
-      </div>
-      <br/>
-
-      <div style="text-align: right">
-        <img src="img/mike-headshot.jpg" style="border-radius: 150px; float: right; margin-left: 40px" width="300px">
-        <br/>
-
-        <h3>Mike McDonald</h3>
-        Developer Programs Engineer
-        <br/>
-        <a href="https://twitter.com/asciimike">@asciimike</a>
-      </div>
-    </section>
-
-
-    <section data-markdown>
-      <script type="text/template">
-        ## Agenda
-
-        - What is realtime data
-        - Why it's hard
-        - How Firebase solves it
-        - Live coding
-        - Case studies
-        - Q&A
-      </script>
-    </section>
-
-    <section data-markdown>
-      <script type="text/template">
-        ## Realtime data is
-        ### Data best served fresh
-
-        ![Value over time](img/graph.png)
-      </script>
-    </section>
-    <section>
-      <h2>Realtime data is</h2>
-
-      <h3>Where your bus is</h3>
-
-      <div id="map-canvas" style="width: 100%; height: 600px"></div>
-    </section>
-    <section>
-      <h2>Realtime data is</h2>
-
-      <h3>Collaborative drawing</h3>
-
-      <iframe style="background-color: #fff; overflow: hidden;"
-              src="https://wb-mobile-demo.firebaseapp.com/#-JW6at3UJLHnDSE72DxR" width="805" height="485"></iframe>
-
-      <br/><a href="http://tinyurl.com/DukeDraws">http://tinyurl.com/DukeDraws</a>
-    </section>
-    <section>
-      <h2>Realtime data is</h2>
-
-      <h3>Cryptocurrency prices</h3>
-      <br/>
-
-      <div id="btc-quote" style="margin-left: 375px; margin-right: 375px;"></div>
-
-    </section>
-
-
-    <section>
-      <h2>Realtime data is hard</h2>
-
-      <h3>Many problems to solve.</h3>
-
-      <br/>
-
-      <div class="fragment" style="float: left; width: 300px;">
-        Complex transport<br/>
-        <img src="img/complex-icon.png">
-      </div>
-      <div class="fragment" style="float: left; width: 300px;">
-        Unreliable networks<br/>
-        <img src="img/no-network-icon.png">
-      </div>
-      <div class="fragment" style="float: left; width: 300px;">
-        Multi-platform<br/>
-        <img src="img/multi-device-icon.png">
-      </div>
-    </section>
-    <section>
-      <h2>Realtime data is hard</h2>
-
-      <p>It's difficult to scale.</p>
-      <img class="fragment" src="img/backend-reqs.gif"
-           style="-webkit-filter: invert(100%) hue-rotate(180deg);">
-    </section>
-
-    <section>
-      <h2>Firebase makes it easy</h2>
-
-      <img src="img/firebase-overview.png">
-    </section>
-
-    <section>
-      <h3>Works with</h3>
-
-      <img src="img/frameworks-transparent.png" style="background: none; box-shadow: none; border: none;">
-    </section>
-
-    <section>
-      <h3>Goodies to reduce the need for servers</h3>
-
-      <br/>
-      <div style="float: left; margin: inherit, 20px;">
-        <img src="img/database.png" style="height: 200px;"/><br/><b>Data</b>
-      </div>
-      <div style="float: left; margin: inherit, 20px;">
-        <img src="img/userMan.png" style="height: 200px;"/><br/><b>Authentication</b>
-      </div>
-      <div style="float: left; margin: inherit, 20px;">
-        <img src="img/hosting.png" style="height: 200px;"/><br/><b>Hosting</b>
-      </div>
-      <div style="clear: both;"></div>
-
-    </section>
-
-    <section>
-      <h1>THE END</h1>
-
-      <p>If you have questions, come say hi to me.</p>
-    </section>
-
+    <h3>Jenny Tong</h3>
+    Developer Advocate
+    <br/>
+    <a href="https://plus.google.com/+JennyMurphy">+JennyMurphy</a><br/><a href="https://twitter.com/baconatedgeek">@BaconatedGeek</a>
   </div>
+  <br/>
+
+  <div style="text-align: right">
+    <img src="img/mike-headshot.jpg" style="border-radius: 150px; float: right; margin-left: 40px" width="300px">
+    <br/>
+
+    <h3>Mike McDonald</h3>
+    Developer Programs Engineer
+    <br/>
+    <a href="https://twitter.com/asciimike">@asciimike</a>
+  </div>
+</section>
+
+
+<section data-markdown>
+  <script type="text/template">
+    ## Agenda
+
+    - Realtime is
+    - Why it's hard
+    - How Firebase solves it
+    - Live coding
+    - Case studies
+    - Q&A
+  </script>
+</section>
+
+<section data-markdown>
+  <script type="text/template">
+    ## Realtime is
+    ### Data best served fresh
+
+    ![Value over time](img/graph.png)
+  </script>
+</section>
+<section>
+  <h2>Realtime is</h2>
+
+  <h3>Where your bus is</h3>
+
+  <div id="map-canvas" style="width: 100%; height: 600px"></div>
+</section>
+<section>
+  <h2>Realtime is</h2>
+
+  <h3>Collaborative drawing</h3>
+
+  <iframe style="background-color: #fff; overflow: hidden;"
+          src="https://wb-mobile-demo.firebaseapp.com/#-JW6at3UJLHnDSE72DxR" width="805" height="485"></iframe>
+
+  <br/><a href="http://tinyurl.com/DukeDraws">http://tinyurl.com/DukeDraws</a>
+</section>
+<section>
+  <h2>Realtime is</h2>
+
+  <h3>Cryptocurrency prices</h3>
+  <br/>
+
+  <div id="btc-quote" style="margin-left: 375px; margin-right: 375px;"></div>
+
+</section>
+
+
+<section>
+  <h2>Realtime is hard</h2>
+
+  <h3>Many problems to solve.</h3>
+
+  <br/>
+
+  <div class="fragment" style="float: left; width: 300px;">
+    Complex transport<br/>
+    <img src="img/complex-icon.png">
+  </div>
+  <div class="fragment" style="float: left; width: 300px;">
+    Unreliable networks<br/>
+    <img src="img/no-network-icon.png">
+  </div>
+  <div class="fragment" style="float: left; width: 300px;">
+    Multi-platform<br/>
+    <img src="img/multi-device-icon.png">
+  </div>
+</section>
+<section>
+  <h2>Realtime data is hard</h2>
+
+  <p>It's difficult to scale.</p>
+  <img class="fragment" src="img/backend-reqs.gif"
+       style="-webkit-filter: invert(100%) hue-rotate(180deg);">
+</section>
+
+<section>
+  <h2>Firebase makes it easy</h2>
+
+  <img src="img/firebase-overview2.png">
+</section>
+
+<section>
+  <h2>Some JavaScript code</h2>
+  <br/>
+  <div class="fragment">
+  <h4>Write Data</h4>
+<pre style="margin-bottom:-50px;"><code data-trim>
+var ref = new Firebase("https://duke.firebaseio-demo.com/");
+
+ref.set("Hello Duke!");
+</code></pre>
+    </div>
+  <br/><br/>
+  <div class="fragment">
+    <h4>Read Data</h4>
+<pre><code data-trim>
+ref.on("value", function (snapshot) {
+  var data = snapshot.val();
+  console.log(data);
+});
+</code></pre>
+  </div>
+</section>
+
+<section>
+  <h3>Works with</h3>
+
+  <img src="img/frameworks-transparent.png" style="background: none; box-shadow: none; border: none;">
+</section>
+
+<section>
+  <h3>Goodies to reduce the need for servers</h3>
+
+  <br/>
+
+  <div style="float: left; margin: 0 20px;">
+    <img src="img/database.png" style="height: 200px;"/><br/><b>Data</b>
+  </div>
+  <div style="float: left; margin: 0 20px;">
+    <img src="img/userMan.png" style="height: 200px;"/><br/><b>Authentication</b>
+  </div>
+  <div style="float: left; margin: 0 20px;">
+    <img src="img/hosting.png" style="height: 200px;"/><br/><b>Hosting</b>
+  </div>
+  <div style="clear: both;"></div>
+
+</section>
+
+<section>
+  <h2>Some facts about Firebase</h2>
+  <br/>
+
+  <img src="img/firebase-facts.png"/>
+
+</section>
+
+<section>
+  <h2>We <3 developers</h2>
+  <br/>
+  <img src="img/walterhacks.jpg"
+       style="height: 380px; border: 5px solid #eeeeee; border-radius: 10px; margin: 0 20px 0 0">
+  <img src="img/calhacks.jpg" style="height: 380px; border: 5px solid #eeeeee; border-radius: 10px; margin: 0 0 0 20px">
+</section>
+
+<section>
+  <div class="center">
+    <h2 style="margin-top: 100px;">Let's write some code!</h2>
+  </div>
+</section>
+
+<section>
+  <div class="center">
+    <h2 style="margin-top: 100px;">It works for big projects too!</h2>
+  </div>
+</section>
+
+<section>
+  <h2>Citrix - GoToMeeting</h2>
+
+  <p style="margin-top: 40px;">Uses Firebase's realtime signaling, presence, and security rules</p>
+
+  <div style="text-align: center;"><img src="img/gotomeeting.png" style="width: 600px; border-radius: 10px;"/></div>
+</section>
+
+<section>
+  <h2>Citrix - Talkboard</h2>
+
+  <p style="margin-top: 40px; margin-bottom: 30px;">Realtime, collaborative whiteboarding for teams</p>
+
+  <div style="text-align:center;"><img src="img/talkboard.png" style="width:600px; border-radius: 10px;"/></div>
+</section>
+
+<section>
+  <h2>CBS</h2>
+  <img src="img/cbs-chat.jpg" style="float: right;"/>
+  <ul id="cbs" style="float:left; width:500px; margin-top: 100px;">
+    <li>Built a realtime chat platform for reality TV series <i>Big Brother</i></li>
+    <br/>
+    <li>50k concurrents at peak times, with over 27m chat message posted</li>
+  </ul>
+</section>
+
+
+<section class="center">
+  <h2>More Case Studies</h2>
+  <br/>
+  <img style="height: 80px; margin-bottom: -10px;" src="img/twitch.png"/>
+  <p style="font-size: 30px;">Notifies users when streams go live</p>
+
+  <img style="height: 100px; margin-bottom: -10px;;" src="img/warby.png"/>
+  <p style="font-size: 30px;">Pneumatic tubes</p>
+
+  <img style="height: 80px; margin-bottom: -10px;" src="img/cmb.png"/>
+  <p style="font-size: 30px;">Realtime chat</p>
+</section>
+
+<section data-markdown>
+  <script type="text/template">
+    ## Conclusion
+    We talked about this stuff
+
+    - Realtime is
+    - Why it's hard
+    - How Firebase solves it
+    - Live coding
+    - Case studies
+  </script>
+</section>
+
+
+<section>
+  <h1>The End</h1>
+  <ul>
+    <li>Slides: <a href="https://mimming.com/presos/firebase-in-30-minutes">mimming.com/presos/firebase-in-30-minutes</a>
+    </li>
+    <li>Try Firebase: <a href="https://www.firebase.com/tutorial/">firebase.com/tutorial/</a></li>
+    <li>Chat Example: <a href="https://github.com/mcdonamp/live-coding">github.com/mcdonamp/live-coding</a></li>
+  </ul>
+  <br/><br/>
+  Questions anyone?
+</section>
+
+
+</div>
 
 </div>
 

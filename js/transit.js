@@ -88,6 +88,13 @@ function transitmapstart() {
 
 
 var transitSystems = [
+    { lat: 35.9132,
+        lon: -79.055845,
+        tag: 'chapel-hill',
+        city: 'Chapel Hill',
+        state: 'NC',
+        name: 'Chapel Hill Transit',
+        zoom: 14 },
     { lat: 37.7789,
         lon: -122.3917,
         tag: 'sf-muni',
@@ -144,13 +151,6 @@ var transitSystems = [
         state: 'MA',
         name: 'Cape Cod Regional Transit Authority',
         zoom: 10 },
-    { lat: 35.9132,
-        lon: -79.055845,
-        tag: 'chapel-hill',
-        city: 'Chapel Hill',
-        state: 'NC',
-        name: 'Chapel Hill Transit',
-        zoom: 14 },
     { lat: 42.361826,
         lon: -71.085298,
         tag: 'charles-river',
