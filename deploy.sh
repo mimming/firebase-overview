@@ -1,3 +1,3 @@
 #!/bin/sh
 
-rsync -vaz ./* mimming.com:~/mimming.com/presos/firebase-in-10-minutes/
+rsync -vaz ./* mimming.com:~/mimming.com/presos/firebase-in-30-minutes/

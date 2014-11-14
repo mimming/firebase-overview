@@ -12,7 +12,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
 
   <link rel="stylesheet" href="css/reveal.min.css">
   <link rel="stylesheet" href="css/theme/default.css" id="theme">
@@ -55,6 +55,10 @@
       box-shadow: none;
     }
 
+    .slides section {
+      font-size: 125%;
+    }
+
     .slides section img {
       background: none;
       box-shadow: none;
@@ -92,15 +96,11 @@
 
   <!-- Any section element inside of this container is displayed as a slide -->
   <div class="slides">
-    <section>
-      <img src="img/firebase-logo.png" style="border:none; box-shadow: none; background: none;">
-
-      <h3>in 10 minutes</h3>
-
-      <p>
-        <small>Created by <a href="https://mimming.com">Jenny Tong</a> / <a href="http://twitter.com/baconatedgeek">@BaconatedGeek</a>
-        </small>
-      </p>
+    <section class="center">
+      <h1 style="font-size: 2em">Hello Hack Duke hackers!</h1>
+      <br/>
+      <img src="img/hack-duke-badge.svg" style="width: 200px"><br/>
+      <img src="img/firebase-logo.png" style="height: 100px">
     </section>
 
     <section>
@@ -108,8 +108,31 @@
       <br/> <br/>
 
       <h3>Makes realtime stuff easy</h3>
-
     </section>
+
+    <section>
+      <div>
+        <img src="img/jenny.jpg" style="border-radius: 150px; float: left; margin-right: 40px" width="300px">
+        <br/>
+
+        <h3>Jenny Tong</h3>
+        Developer Advocate
+        <br/>
+        <a href="https://plus.google.com/+JennyMurphy">+JennyMurphy</a><br/><a href="https://twitter.com/baconatedgeek">@BaconatedGeek</a>
+      </div>
+      <br/>
+
+      <div style="text-align: right">
+        <img src="img/mike-headshot.jpg" style="border-radius: 150px; float: right; margin-left: 40px" width="300px">
+        <br/>
+
+        <h3>Mike McDonald</h3>
+        Developer Programs Engineer
+        <br/>
+        <a href="https://twitter.com/asciimike">@asciimike</a>
+      </div>
+    </section>
+
 
     <section data-markdown>
       <script type="text/template">
@@ -118,6 +141,9 @@
         - What is realtime data
         - Why it's hard
         - How Firebase solves it
+        - Live coding
+        - Case studies
+        - Q&A
       </script>
     </section>
 
@@ -132,7 +158,7 @@
     <section>
       <h2>Realtime data is</h2>
 
-      <h3>Where your Muni bus is</h3>
+      <h3>Where your bus is</h3>
 
       <div id="map-canvas" style="width: 100%; height: 600px"></div>
     </section>
@@ -144,6 +170,7 @@
       <iframe style="background-color: #fff; overflow: hidden;"
               src="https://wb-mobile-demo.firebaseapp.com/#-JW6at3UJLHnDSE72DxR" width="805" height="485"></iframe>
 
+      <br/><a href="http://tinyurl.com/DukeDraws">http://tinyurl.com/DukeDraws</a>
     </section>
     <section>
       <h2>Realtime data is</h2>
@@ -187,54 +214,31 @@
     <section>
       <h2>Firebase makes it easy</h2>
 
-      <p>Cloud noSql database</p>
-      <img src="img/firebase-icon.png" style="border:none; box-shadow: none; background: none;">
+      <img src="img/firebase-overview.png">
     </section>
 
     <section>
-      <h2>Firebase makes it easy</h2>
-
-      <h3>Client libraries and framework integrations</h3>
+      <h3>Works with</h3>
 
       <img src="img/frameworks-transparent.png" style="background: none; box-shadow: none; border: none;">
     </section>
 
     <section>
-      <h2>Firebase makes it easy</h2>
+      <h3>Goodies to reduce the need for servers</h3>
 
-      <h3>Eliminates or reduces back end code</h3>
-      <br>
-      <dl>
-        <style>
-          dt {
-            float: left;
-            clear: both;
-            width: 400px;
-            max-height: 160px;
-          }
+      <br/>
+      <div style="float: left; margin: inherit, 20px;">
+        <img src="img/database.png" style="height: 200px;"/><br/><b>Data</b>
+      </div>
+      <div style="float: left; margin: inherit, 20px;">
+        <img src="img/userMan.png" style="height: 200px;"/><br/><b>Authentication</b>
+      </div>
+      <div style="float: left; margin: inherit, 20px;">
+        <img src="img/hosting.png" style="height: 200px;"/><br/><b>Hosting</b>
+      </div>
+      <div style="clear: both;"></div>
 
-          dd {
-            float: left;
-            width: 400px;
-            max-height: 160px;
-          }
-
-          .reveal dl img {
-            max-width: 250px;
-            max-height: 100px;
-          }
-        </style>
-        <dt><img src="img/cli.png"></dt>
-        <dd style="padding-top: 50px; padding-left: 20px;">Production grade hosting</dd>
-        <dt><img src="img/lock.png"></dt>
-        <dd style="padding-top: 50px; padding-left: 20px;">Rich server side security rules</dd>
-        <dt><img src="img/simple-login.png"></dt>
-        <dd style="padding-top: 50px; padding-left: 20px;">Simple Login user authentication</dd>
-        <dt><img src="img/parking-map.png"></dt>
-        <dd style="padding-top: 50px; padding-left: 20px;">Open data sets</dd>
-      </dl>
     </section>
-
 
     <section>
       <h1>THE END</h1>
@@ -289,8 +293,9 @@
     ]
   });
 
+  // Update to display map on map-canvas when that slide loads
   Reveal.addEventListener('slidechanged', function (event) {
-    if (event.indexh === 3 && event.indexv === 1) {
+    if (event.indexh === 5) {
       transitmapstart()
     }
   });
