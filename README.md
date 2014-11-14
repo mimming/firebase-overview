@@ -6,7 +6,7 @@ little bit of live coding.
 Slides live on [mimming.com](https://mimming.com/presos/firebase-in-30-minutes/)
 
 ## Presented at
-- [Hack Duke](http://www.hackduke.com/tech-talks) on 14 Nov 2014 - [slides](https://github.com/mimming/firebase-in-30-minutes) 
+- [Hack Duke](http://www.hackduke.com/tech-talks) on 14 Nov 2014 - [release tag](https://github.com/mimming/firebase-in-30-minutes/releases/tag/hackduke14) 
 
 ## About the deck
 
