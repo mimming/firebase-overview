@@ -34,7 +34,7 @@
   <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6U2ExB8yLDc7RiGPYK3C3yIzDPpyFJE0&sensor=false"></script>
   <script src="https://cdn.firebase.com/libs/geofire/3.0.2/geofire.min.js"></script>
-  <script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.1.1/firebase.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/transit.js"></script>
   <script type="text/javascript" src="https://cdn-gh.firebase.com/btcquote/embed.js"></script>
@@ -65,14 +65,10 @@
       border: none;
     }
 
-    ul.multicol {
-      width: 1300px;
-
-    }
-
     .reveal pre code {
       font-size: 120%;
     }
+
     ul.multicol li {
       display: inline-block;
       width: 400px;
@@ -84,7 +80,6 @@
       width: auto;
       height: auto;
     }
-
 
     .reveal section img {
       max-height: 65%;
@@ -100,9 +95,8 @@
 <!-- Any section element inside of this container is displayed as a slide -->
 <div class="slides">
 <section class="center">
-  <h1 style="font-size: 2em">Hello Hack Duke hackers!</h1>
+  <h1 style="font-size: 2em">Hello GDG Berkeley!</h1>
   <br/>
-  <img src="img/hack-duke-badge.svg" style="width: 200px"><br/>
   <img src="img/firebase-logo.png" style="height: 100px">
 </section>
 
@@ -121,19 +115,10 @@
     <h3>Jenny Tong</h3>
     Developer Advocate
     <br/>
-    <a href="https://plus.google.com/+JennyMurphy">+JennyMurphy</a><br/><a href="https://twitter.com/baconatedgeek">@BaconatedGeek</a>
+    <a href="https://plus.google.com/+JennyMurphy">+JennyMurphy</a><br/>
+    <a href="https://twitter.com/baconatedgeek">@BaconatedGeek</a><br/>
   </div>
-  <br/>
 
-  <div style="text-align: right">
-    <img src="img/mike-headshot.jpg" style="border-radius: 150px; float: right; margin-left: 40px" width="300px">
-    <br/>
-
-    <h3>Mike McDonald</h3>
-    Developer Programs Engineer
-    <br/>
-    <a href="https://twitter.com/asciimike">@asciimike</a>
-  </div>
 </section>
 
 
@@ -170,18 +155,21 @@
 
   <h3>Collaborative drawing</h3>
 
-  <iframe style="background-color: #fff; overflow: hidden;"
-          src="https://wb-mobile-demo.firebaseapp.com/#-JW6at3UJLHnDSE72DxR" width="805" height="485"></iframe>
+  <iframe style="background-color: #fff; overflow: hidden;" scrolling="no"
+          src="https://wb-mobile-demo.firebaseapp.com/#-JgDwv_wX9fiivJF7ALg" width="800" height="400"></iframe>
 
-  <br/><a href="http://tinyurl.com/DukeDraws">http://tinyurl.com/DukeDraws</a>
+  <br/><a href="http://tinyurl.com/FireDraw">http://tinyurl.com/FireDraw</a>
 </section>
 <section>
-  <h2>Realtime is</h2>
+  <h2>Realtime data is</h2>
 
-  <h3>Cryptocurrency prices</h3>
+  <h3>Game state</h3>
   <br/>
 
-  <div id="btc-quote" style="margin-left: 375px; margin-right: 375px;"></div>
+  <iframe style="background-color: #fff; overflow: hidden;"
+          src="./asteroids" width="800" height="455" scrolling="no"></iframe>
+
+  <br/><a href="http://tinyurl.com/MMOasteroids">http://tinyurl.com/MMOasteroids</a>
 
 </section>
 
@@ -223,15 +211,17 @@
 <section>
   <h2>Some JavaScript code</h2>
   <br/>
-  <div class="fragment">
-  <h4>Write Data</h4>
-<pre style="margin-bottom:-50px;"><code data-trim>
-var ref = new Firebase("https://duke.firebaseio-demo.com/");
 
-ref.set("Hello Duke!");
+  <div class="fragment">
+    <h4>Write Data</h4>
+<pre style="margin-bottom:-50px;"><code data-trim>
+  var ref = new Firebase("https://gdg.firebaseio-demo.com/");
+
+  ref.set("Hello, Developers!");
 </code></pre>
-    </div>
+  </div>
   <br/><br/>
+
   <div class="fragment">
     <h4>Read Data</h4>
 <pre><code data-trim>
@@ -270,8 +260,23 @@ ref.on("value", function (snapshot) {
 <section>
   <h2>Some facts about Firebase</h2>
   <br/>
+  <ul>
+    <li>Founded in 2011</li>
+    <li class="fragment">Acquired by Google in October 2014</li>
+    <li class="fragment"><span id="current-devs">140,000</span> developers</li>
+    <li class="fragment">Over 1,000,000 concurrent connections</li>
+  </ul>
+  <script>
+    $(document).ready(function () {
+      var devsRef = new Firebase("https://firebase-website.firebaseio.com/stats/signups");
+      devsRef.on("value", function (snap) {
+        $("#current-devs").text(snap.val().toLocaleString());
 
-  <img src="img/firebase-facts.png"/>
+      });
+    });
+
+  </script>
+
 
 </section>
 
@@ -279,8 +284,8 @@ ref.on("value", function (snapshot) {
   <h2>We <3 developers</h2>
   <br/>
   <img src="img/walterhacks.jpg"
-       style="height: 380px; border: 5px solid #eeeeee; border-radius: 10px; margin: 0 20px 0 0">
-  <img src="img/calhacks.jpg" style="height: 380px; border: 5px solid #eeeeee; border-radius: 10px; margin: 0 0 0 20px">
+       style="height: 380px; border: 5px solid #bbb; border-radius: 10px; margin: 0 20px 0 0">
+  <img src="img/calhacks.jpg" style="height: 380px; border: 5px solid #bbb; border-radius: 10px; margin: 0 0 0 20px">
 </section>
 
 <section>
@@ -288,6 +293,7 @@ ref.on("value", function (snapshot) {
     <h2 style="margin-top: 100px;">Let's write some code!</h2>
   </div>
 </section>
+
 
 <section>
   <div class="center">
@@ -325,14 +331,24 @@ ref.on("value", function (snapshot) {
 <section class="center">
   <h2>More Case Studies</h2>
   <br/>
-  <img style="height: 80px; margin-bottom: -10px;" src="img/twitch.png"/>
-  <p style="font-size: 30px;">Notifies users when streams go live</p>
 
-  <img style="height: 100px; margin-bottom: -10px;;" src="img/warby.png"/>
-  <p style="font-size: 30px;">Pneumatic tubes</p>
+  <div>
+    <img style="height: 80px; margin-bottom: -10px;" src="img/twitch.png"/>
 
-  <img style="height: 80px; margin-bottom: -10px;" src="img/cmb.png"/>
-  <p style="font-size: 30px;">Realtime chat</p>
+    <p style="font-size: 30px;">Chat and stream notifications</p>
+  </div>
+
+  <div class="fragment">
+    <img style="height: 100px; margin-bottom: -10px;;" src="img/warby.png"/>
+
+    <p style="font-size: 30px;">Pneumatic tubes</p>
+  </div>
+
+  <div class="fragment">
+    <img style="height: 80px; margin-bottom: -10px;" src="img/cmb.png"/>
+
+    <p style="font-size: 30px;">Realtime chat</p>
+  </div>
 </section>
 
 <section data-markdown>
@@ -351,7 +367,8 @@ ref.on("value", function (snapshot) {
 <section>
   <h1>The End</h1>
   <ul>
-    <li>Slides: <a href="https://mimming.com/presos/firebase-in-30-minutes">mimming.com/presos/firebase-in-30-minutes</a>
+    <li>Slides: <a
+        href="https://mimming.com/presos/firebase-in-30-minutes">mimming.com/presos/firebase-in-30-minutes</a>
     </li>
     <li>Try Firebase: <a href="https://www.firebase.com/tutorial">firebase.com/tutorial</a></li>
     <li>Chat Example: <a href="https://github.com/mcdonamp/live-coding">github.com/mcdonamp/live-coding</a></li>
