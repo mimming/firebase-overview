@@ -7,6 +7,7 @@ Slides live on [mimming.com](https://mimming.com/presos/firebase-in-30-minutes/)
 
 ## Presented at
 - [Hack Duke](http://www.hackduke.com/tech-talks) on 14 Nov 2014 - [release tag](https://github.com/mimming/firebase-in-30-minutes/releases/tag/hackduke14) 
+- [GDG Berkeley](http://www.meetup.com/GDGBerkeley/events/219265674/) on 21 Jan 2015 - [release tag](https://github.com/mimming/firebase-in-30-minutes/releases/tag/2014-01-21-gdg-berkeley-meetup)
 
 ## About the deck
 
