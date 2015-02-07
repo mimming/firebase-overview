@@ -1,3 +1,8 @@
 #!/bin/sh
 
-rsync --exclude=.git --exclude=test -vaz ./* mimming.com:~/mimming.com/presos/firebase-overview/
+targetDir=`basename "$PWD"`
+targetPath="~/mimming.com/presos/$targetDir"
+targetHost="mimming.com"
+
+echo "Deploying to $targetHost:$targetPath"
+rsync --exclude=.git --exclude=test -vaz ./* $targetHost:$targetPath
