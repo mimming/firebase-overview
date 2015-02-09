@@ -17,6 +17,6 @@ Forked from the wonderful [reveal.js](https://github.com/hakimel/reveal.js)
 
 ## License
 
-MIT licensed
+Apache 2.0
 
-Copyright (C) 2014 Google, Inc.
+Copyright (C) 2015 Google, Inc.
