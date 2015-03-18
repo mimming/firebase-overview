@@ -12,7 +12,7 @@ Slides live on [mimming.com](https://mimming.com/presos/firebase-overview/)
 - [Hack Duke](http://www.hackduke.com/tech-talks) on 14 Nov 2014 - [tag](https://github.com/mimming/firebase-overview/releases/tag/hackduke14) 
 - [GXdev](http://gxdev.eventbrite.com) 11 Jan 2015 - [tag](https://github.com/mimming/firebase-in-10-minutes/releases/tag/GXdev15)
 - [GDG Berkeley](http://www.meetup.com/GDGBerkeley/events/219265674/) on 21 Jan 2015 - [tag](https://github.com/mimming/firebase-overview/releases/tag/2015-01-21-gdg-berkeley-meetup)
-- [Game Developer Conference](https://events.withgoogle.com/gdc-developer-day/pages/code-labs/) on 2 Mar 2015
+- [Game Developer Conference](https://events.withgoogle.com/gdc-developer-day/pages/code-labs/) on 2 Mar 2015 - [tag](https://github.com/mimming/firebase-overview/releases/tag/2015-03-02-gdc)
 
 ## About the deck
 
