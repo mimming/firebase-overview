@@ -14,6 +14,7 @@ Slides live on [mimming.com](https://mimming.com/presos/firebase-overview/)
 - [GDG Berkeley](http://www.meetup.com/GDGBerkeley/events/219265674/) on 21 Jan 2015 - [tag](https://github.com/mimming/firebase-overview/releases/tag/2015-01-21-gdg-berkeley-meetup)
 - [Game Developer Conference](https://events.withgoogle.com/gdc-developer-day/pages/code-labs/) on 2 Mar 2015 - [tag](https://github.com/mimming/firebase-overview/releases/tag/2015-03-02-gdc)
 - [GDG Atlanta](http://www.meetup.com/gdg-atlanta/events/219977510/) on 10 Mar 2015 - [tag](https://github.com/mimming/firebase-overview/releases/tag/2015-03-10-gdg-atlanta)
+- [GDG Montreal](http://www.meetup.com/GDG-Montreal-Android/events/221583577/) on 8 Apr 2015 - [tag](https://github.com/mimming/firebase-overview/releases/tag/2015-04-08-gdg-montreal)
 
 ## About the deck
 
