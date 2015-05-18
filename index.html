@@ -31,23 +31,17 @@
     }
   </script>
 
-  <script>
-    var currentSlide = 0;
-
-  </script>
-
-
   <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6U2ExB8yLDc7RiGPYK3C3yIzDPpyFJE0&sensor=false"></script>
   <script src="https://cdn.firebase.com/libs/geofire/3.0.2/geofire.min.js"></script>
   <script src="https://cdn.firebase.com/js/client/2.1.1/firebase.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/transit.js"></script>
+  <script type="text/javascript" src="https://cdn-gh.firebase.com/btcquote/embed.js"></script>
 
   <!--[if lt IE 9]>
   <script src="lib/js/html5shiv.js"></script>
   <![endif]-->
-  <script src="js/jQuery.tubeplayer.min.js"></script>
 
 
   <style>
@@ -100,12 +94,6 @@
 
 <!-- Any section element inside of this container is displayed as a slide -->
 <div class="slides">
-<section class="center">
-  <h1 style="font-size: 4em">Hello GDG!</h1>
-  <br/>
-  <img src="img/firebase-logo.png" style="height: 100px">
-</section>
-
 <section>
   <img src="img/firebase-logo.png" style="border:none; box-shadow: none; background: none;">
   <br/> <br/>
@@ -119,7 +107,8 @@
 
     <div style="float: left; width: 400px;">
       <h3>Jenny Tong</h3>
-      Developer Advocate at <img src="img/firebase-logo.png" style="width: 300px;">
+      Google Cloud Platform
+      Developer Advocate
       <br/>
       <br/>
       <a href="https://plus.google.com/+mimming">+mimming</a><br/>
@@ -135,7 +124,7 @@
     - What realtime is
     - Why it's hard
     - How Firebase makes it easy
-    - Live NodeBotting
+    - Live coding
     - Real world examples
     - Q&A
   </script>
@@ -246,101 +235,6 @@ ref.on("value", function (snapshot) {
 </section>
 
 <section>
-  <h3>Works with</h3>
-  <img src="img/sgier-johnny-five.png" style="background: none; box-shadow: none; border: none;">
-</section>
-
-<section>
-  <h2>Anatomy of a NodeBot</h2>
-
-  <br/>
-  <img src="img/anatomy.jpg">
-
-</section>
-
-<section>
-  <h2>Electronics</h2>
-  <img src="img/button-led.jpg">
-</section>
-
-<section data-markdown>
-  <script type="text/template">
-    ## NodeBot build checklist
-
-    - Arduino Uno has Firmata <!-- .element: class="fragment" -->
-    - Button & LED circuit built <!-- .element: class="fragment" -->
-    - Raspberry Pi has node.js, Johnny-Five, and Firebase <!-- .element: class="fragment" -->
-    - Code! <!-- .element: class="fragment" -->
-       - Read the button state
-       - Write to a demo Firebase
-       - Read it back out, light up an LED
-  </script>
-</section>
-
-<section>
-  <h3>Now what?</h3>
-  <div style="margin: 0 auto; width: 800px; height: 800px;" id='player'></div>
-  <script>
-    $(document).ready(function () {
-      // Create the video player
-      var buttonRef = new Firebase("https://firebutton.firebaseio-demo.com/button");
-      buttonRef.on("value", function (snapshot) {
-
-        var buttonValue = snapshot.val();
-        if (buttonValue && currentSlide == 17) {
-          $('#player').tubeplayer({
-            initialVideo: "dQw4w9WgXcQ", // A very special video
-            autoPlay: true
-          });
-          console.log("playing!");
-        }
-      });
-    });
-  </script>
-</section>
-
-<section>
-  <h2>JavaScript</h2>
-  <pre><code>board.on("ready", function () {
-  var button = new five.Button(13);
-
-  button.on("down", function () { ref.set("true"); });
-
-  button.on("up", function () { ref.set("false"); });
-
-  var led = five.Led(12);
-  ref.on("value", function(snap) {
-    if(snap.val() == "true") {
-      led.on();
-      setTimeout(function() { led.off(); }, 500);
-    }
-  });
-});
-  </code></pre>
-
-</section>
-
-  <section>
-    <h2>Video Playing Code</h2>
-    <pre><code>// Connect to a demo Firebase
-var ref =  new Firebase("https://firebutton.firebaseio-demo.com");
-
-ref.child("button").on("value", function (snapshot) {
-  // Read the value
-  var buttonValue = snapshot.val();
-  // If it's true, play the video
-  if (buttonValue) {
-    $('#player').tubeplayer({
-      initialVideo: "dQw4w9WgXcQ",
-      autoPlay: true
-    });
-    $('#player').tubeplayer("play");
-  }
-});</code></pre>
-  </section>
-
-
-<section>
   <h3>Goodies to reduce the need for servers</h3>
 
   <br/>
@@ -385,6 +279,14 @@ ref.child("button").on("value", function (snapshot) {
        style="height: 380px; border: 5px solid #bbb; border-radius: 10px; margin: 0 20px 0 0">
   <img src="img/calhacks.jpg" style="height: 380px; border: 5px solid #bbb; border-radius: 10px; margin: 0 0 0 20px">
 </section>
+
+<section>
+  <div class="center">
+    <h2 style="margin-top: 100px;">Let's write some code!</h2>
+  </div>
+</section>
+
+
 <section>
   <div class="center">
     <h2 style="margin-top: 100px;">It works for big projects too!</h2>
@@ -446,8 +348,9 @@ ref.child("button").on("value", function (snapshot) {
     ## We talked about this stuff
 
     - What realtime is
+    - Why it's hard
     - How Firebase makes it easy
-    - Live NodeBotting
+    - Live coding
     - Real world examples
   </script>
 </section>
@@ -459,8 +362,7 @@ ref.child("button").on("value", function (snapshot) {
     <li>Slides: <a href="https://mimming.com/presos/firebase-overview">mimming.com/presos/firebase-overview</a>
     </li>
     <li>Try Firebase: <a href="https://www.firebase.com/tutorial">firebase.com/tutorial</a></li>
-    <li>Johnny-Five: <a href="https://github.com/rwaldron/johnny-five">github.com/rwaldron/johnny-five</a></li>
-    <li>FireButton source: <a href="https://github.com/mimming/firebutton">github.com/mimming/firebutton</a></li>
+    <li>Chat Example: <a href="https://github.com/mimming/firebase-tiny-chat">github.com/mimming/firebase-tiny-chat</a></li>
   </ul>
   <br/><br/>
   Questions anyone?
@@ -519,11 +421,6 @@ ref.child("button").on("value", function (snapshot) {
     if (event.indexh === 5) {
       transitmapstart()
     }
-  });
-
-  // Update to display map on map-canvas when that slide loads
-  Reveal.addEventListener('slidechanged', function (event) {
-    currentSlide = event.indexh;
   });
 
 </script>
