@@ -96,8 +96,7 @@
 <section>
   <img src="img/firebase-logo.png" style="border:none; box-shadow: none; background: none;">
   <br/> <br/>
-
-  <h3>An easier way to build your cross-platform app</h3>
+  <h3>An easier way to build your hack</h3>
 </section>
 
 <section>
@@ -115,18 +114,43 @@
   </div>
 </section>
 
-<section data-markdown>
-  <script type="text/template">
-    ## Agenda
+  <section>
+    <h3>Goodies to make the hard parts easy</h3>
 
-    - What realtime is
-    - Why it's hard
-    - How Firebase makes it easy
-    - Live coding
-    - Real world examples
-    - Q&A
-  </script>
-</section>
+    <br/>
+
+    <div style="float: left; margin: 0 20px;">
+      <img src="img/database.png" style="height: 200px;"/><br/><b>Realtime <br/>Data</b>
+    </div>
+    <div style="float: left; margin: 0 20px;">
+      <img src="img/userMan.png" style="height: 200px;"/><br/><b>Authentication</b>
+    </div>
+    <div style="float: left; margin: 0 20px;">
+      <img src="img/hosting.png" style="height: 200px;"/><br/><b>Hosting</b>
+    </div>
+    <div style="clear: both;"></div>
+
+  </section>
+
+  <section>
+    <h3>Firebase Realtime Database</h3>
+    <br/>
+
+    <img src="img/database.png" style="height: 300px;"/>
+  </section>
+
+
+<!--<section data-markdown>-->
+  <!--<script type="text/template">-->
+    <!--## Agenda-->
+    <!--<!-&#45;&#45; What realtime is&ndash;&gt;-->
+    <!--<!-&#45;&#45; Why it's hard&ndash;&gt;-->
+    <!--<!-&#45;&#45; How Firebase makes it easy&ndash;&gt;-->
+    <!--<!-&#45;&#45; Live coding&ndash;&gt;-->
+    <!--<!-&#45;&#45; Real world examples&ndash;&gt;-->
+    <!--<!-&#45;&#45; Q&A&ndash;&gt;-->
+  <!--</script>-->
+<!--</section>-->
 
 <section data-markdown>
   <script type="text/template">
@@ -164,38 +188,34 @@
   <iframe src="https://mmoasteroids.firebaseapp.com/embed.html" scrolling="no"
           style="background-color: #fff; overflow: hidden; width: 100%; max-height: 100%; height: 600px; -webkit-transform: scale(0.7);">
   </iframe>
-
-
 </section>
 
 
 <section>
   <h2>Realtime is hard</h2>
 
-  <h3>Many problems to solve.</h3>
-
+  <p>So many servers :(</p>
   <br/>
-
-  <div class="fragment" style="float: left; width: 300px;">
-    Complex transport<br/>
-    <img src="img/complex-icon.png">
-  </div>
-  <div class="fragment" style="float: left; width: 300px;">
-    Unreliable networks<br/>
-    <img src="img/no-network-icon.png">
-  </div>
-  <div class="fragment" style="float: left; width: 300px;">
-    Multi-platform<br/>
-    <img src="img/multi-device-icon.png">
-  </div>
-</section>
-<section>
-  <h2>Realtime data is hard</h2>
-
-  <p>It's difficult to scale.</p>
   <img class="fragment" src="img/backend-reqs.gif"
        style="-webkit-filter: invert(100%) hue-rotate(180deg);">
 </section>
+  <section>
+    <h2>Realtime is hard</h2>
+
+<br/>
+    <div class="fragment" style="float: left; width: 300px;">
+      Complex transport<br/>
+      <img src="img/complex-icon.png">
+    </div>
+    <div class="fragment" style="float: left; width: 300px;">
+      Unreliable networks<br/>
+      <img src="img/no-network-icon.png">
+    </div>
+    <div class="fragment" style="float: left; width: 300px;">
+      Multi-platform<br/>
+      <img src="img/multi-device-icon.png">
+    </div>
+  </section>
 
 <section>
   <h2>Firebase makes it easy</h2>
@@ -234,126 +254,109 @@ ref.on("value", function (snapshot) {
   <img src="img/frameworks-transparent.png" style="background: none; box-shadow: none; border: none;">
 </section>
 
-<section>
-  <h3>Goodies to reduce the need for servers</h3>
 
-  <br/>
+<!--<section>-->
+  <!--<h2>Some facts about Firebase</h2>-->
+  <!--<br/>-->
+  <!--<ul>-->
+    <!--<li>Founded in 2011</li>-->
+    <!--<li class="fragment">Acquired by Google in October 2014</li>-->
+    <!--<li class="fragment"><span id="current-devs">160,000</span> developers</li>-->
+    <!--<li class="fragment">Over 1,000,000 concurrent connections</li>-->
+  <!--</ul>-->
+  <!--<script>-->
+    <!--$(document).ready(function () {-->
+      <!--var devsRef = new Firebase("https://firebase-website.firebaseio.com/stats/signups");-->
+      <!--devsRef.on("value", function (snap) {-->
+        <!--$("#current-devs").text(snap.val().toLocaleString());-->
 
-  <div style="float: left; margin: 0 20px;">
-    <img src="img/database.png" style="height: 200px;"/><br/><b>Data</b>
-  </div>
-  <div style="float: left; margin: 0 20px;">
-    <img src="img/userMan.png" style="height: 200px;"/><br/><b>Authentication</b>
-  </div>
-  <div style="float: left; margin: 0 20px;">
-    <img src="img/hosting.png" style="height: 200px;"/><br/><b>Hosting</b>
-  </div>
-  <div style="clear: both;"></div>
+      <!--});-->
+    <!--});-->
+  <!--</script>-->
+<!--</section>-->
 
-</section>
+<!--<section>-->
+  <!--<h2>We <3 developers</h2>-->
+  <!--<br/>-->
+  <!--<img src="img/walterhacks.jpg"-->
+       <!--style="height: 380px; border: 5px solid #bbb; border-radius: 10px; margin: 0 20px 0 0">-->
+  <!--<img src="img/calhacks.jpg" style="height: 380px; border: 5px solid #bbb; border-radius: 10px; margin: 0 0 0 20px">-->
+<!--</section>-->
 
-<section>
-  <h2>Some facts about Firebase</h2>
-  <br/>
-  <ul>
-    <li>Founded in 2011</li>
-    <li class="fragment">Acquired by Google in October 2014</li>
-    <li class="fragment"><span id="current-devs">160,000</span> developers</li>
-    <li class="fragment">Over 1,000,000 concurrent connections</li>
-  </ul>
-  <script>
-    $(document).ready(function () {
-      var devsRef = new Firebase("https://firebase-website.firebaseio.com/stats/signups");
-      devsRef.on("value", function (snap) {
-        $("#current-devs").text(snap.val().toLocaleString());
-
-      });
-    });
-  </script>
-</section>
-
-<section>
-  <h2>We <3 developers</h2>
-  <br/>
-  <img src="img/walterhacks.jpg"
-       style="height: 380px; border: 5px solid #bbb; border-radius: 10px; margin: 0 20px 0 0">
-  <img src="img/calhacks.jpg" style="height: 380px; border: 5px solid #bbb; border-radius: 10px; margin: 0 0 0 20px">
-</section>
-
-<section>
-  <div class="center">
-    <h2 style="margin-top: 100px;">Let's write some code!</h2>
-  </div>
-</section>
+<!--<section>-->
+  <!--<div class="center">-->
+    <!--<h2 style="margin-top: 100px;">Let's write some code!</h2>-->
+  <!--</div>-->
+<!--</section>-->
 
 
-<section>
-  <div class="center">
-    <h2 style="margin-top: 100px;">It works for big projects too!</h2>
-  </div>
-</section>
+<!--<section>-->
+  <!--<div class="center">-->
+    <!--<h2 style="margin-top: 100px;">It works for big projects too!</h2>-->
+  <!--</div>-->
+<!--</section>-->
 
-<section>
-  <h2>Citrix - GoToMeeting</h2>
+<!--<section>-->
+  <!--<h2>Citrix - GoToMeeting</h2>-->
 
-  <p style="margin-top: 40px;">Uses Firebase's realtime signaling, presence, and security rules</p>
+  <!--<p style="margin-top: 40px;">Uses Firebase's realtime signaling, presence, and security rules</p>-->
 
-  <div style="text-align: center;"><img src="img/gotomeeting.png" style="width: 600px; border-radius: 10px;"/></div>
-</section>
+  <!--<div style="text-align: center;"><img src="img/gotomeeting.png" style="width: 600px; border-radius: 10px;"/></div>-->
+<!--</section>-->
 
-<section>
-  <h2>Citrix - Talkboard</h2>
+<!--<section>-->
+  <!--<h2>Citrix - Talkboard</h2>-->
 
-  <p style="margin-top: 40px; margin-bottom: 30px;">Realtime, collaborative whiteboarding for teams</p>
+  <!--<p style="margin-top: 40px; margin-bottom: 30px;">Realtime, collaborative whiteboarding for teams</p>-->
 
-  <div style="text-align:center;"><img src="img/talkboard.png" style="width:600px; border-radius: 10px;"/></div>
-</section>
+  <!--<div style="text-align:center;"><img src="img/talkboard.png" style="width:600px; border-radius: 10px;"/></div>-->
+<!--</section>-->
 
-<section>
-  <h2>CBS</h2>
-  <img src="img/cbs-chat.jpg" style="float: right;"/>
-  <ul id="cbs" style="float:left; width:500px; margin-top: 100px;">
-    <li>Built a realtime chat platform for reality TV series <i>Big Brother</i></li>
-    <br/>
-    <li>50k concurrents at peak times, with over 27m chat message posted</li>
-  </ul>
-</section>
+<!--<section>-->
+  <!--<h2>CBS</h2>-->
+  <!--<img src="img/cbs-chat.jpg" style="float: right;"/>-->
+  <!--<ul id="cbs" style="float:left; width:500px; margin-top: 100px;">-->
+    <!--<li>Built a realtime chat platform for reality TV series <i>Big Brother</i></li>-->
+    <!--<br/>-->
+    <!--<li>50k concurrents at peak times, with over 27m chat message posted</li>-->
+  <!--</ul>-->
+<!--</section>-->
 
 
-<section class="center">
-  <h2>More Case Studies</h2>
-  <br/>
+<!--<section class="center">-->
+  <!--<h2>More Case Studies</h2>-->
+  <!--<br/>-->
 
-  <div>
-    <img style="height: 80px; margin-bottom: -10px;" src="img/twitch.png"/>
+  <!--<div>-->
+    <!--<img style="height: 80px; margin-bottom: -10px;" src="img/twitch.png"/>-->
 
-    <p style="font-size: 30px;">Chat and stream notifications</p>
-  </div>
+    <!--<p style="font-size: 30px;">Chat and stream notifications</p>-->
+  <!--</div>-->
 
-  <div class="fragment">
-    <img style="height: 100px; margin-bottom: -10px;;" src="img/warby.png"/>
+  <!--<div class="fragment">-->
+    <!--<img style="height: 100px; margin-bottom: -10px;;" src="img/warby.png"/>-->
 
-    <p style="font-size: 30px;">Pneumatic tubes</p>
-  </div>
+    <!--<p style="font-size: 30px;">Pneumatic tubes</p>-->
+  <!--</div>-->
 
-  <div class="fragment">
-    <img style="height: 80px; margin-bottom: -10px;" src="img/cmb.png"/>
+  <!--<div class="fragment">-->
+    <!--<img style="height: 80px; margin-bottom: -10px;" src="img/cmb.png"/>-->
 
-    <p style="font-size: 30px;">Realtime chat</p>
-  </div>
-</section>
+    <!--<p style="font-size: 30px;">Realtime chat</p>-->
+  <!--</div>-->
+<!--</section>-->
 
-<section data-markdown>
-  <script type="text/template">
-    ## We talked about this stuff
+<!--<section data-markdown>-->
+  <!--<script type="text/template">-->
+    <!--## We talked about this stuff-->
 
-    - What realtime is
-    - Why it's hard
-    - How Firebase makes it easy
-    - Live coding
-    - Real world examples
-  </script>
-</section>
+    <!--<!-&#45;&#45; What realtime is&ndash;&gt;-->
+    <!--<!-&#45;&#45; Why it's hard&ndash;&gt;-->
+    <!--<!-&#45;&#45; How Firebase makes it easy&ndash;&gt;-->
+    <!--<!-&#45;&#45; Live coding&ndash;&gt;-->
+    <!--<!-&#45;&#45; Real world examples&ndash;&gt;-->
+  <!--</script>-->
+<!--</section>-->
 
 
 <section>
@@ -361,11 +364,11 @@ ref.on("value", function (snapshot) {
   <ul>
     <li>Slides: <a href="https://mimming.com/presos/firebase-overview">mimming.com/presos/firebase-overview</a>
     </li>
-    <li>Try Firebase: <a href="https://www.firebase.com/tutorial">firebase.com/tutorial</a></li>
-    <li>Chat Example: <a href="https://github.com/mimming/firebase-tiny-chat">github.com/mimming/firebase-tiny-chat</a></li>
+    <li>Come to my workshop at 2pm! I'll have swag!</li>
+    <!--<li>Try Firebase: <a href="https://www.firebase.com/tutorial">firebase.com/tutorial</a></li>-->
+    <!--<li>Chat Example: <a href="https://github.com/mimming/firebase-tiny-chat">github.com/mimming/firebase-tiny-chat</a></li>-->
   </ul>
-  <br/><br/>
-  Questions anyone?
+
 </section>
 
 
