@@ -145,11 +145,11 @@
     - What realtime is
     - Why it's hard
     - How Firebase makes it easy
-    - Live coding
     - Real world examples
     - Q&A
   </script>
 </section>
+  <!-- - Live coding-->
 
 <section data-markdown>
   <script type="text/template">
@@ -161,12 +161,12 @@
 </section>
 
 <section>
-  <h3>Realtime is where your bus is</h3>
-  <a href="https://wherebus.firebaseapp.com">https://wherebus.firebaseapp.com</a>
+  <h3>Realtime is where your can park</h3>
+  <a href="https://wherebus.firebaseapp.com/parking.html">https://wherebus.firebaseapp.com/parking.html</a>
   <br/>
   <br/>
 
-  <iframe src="https://wherebus.firebaseapp.com/" style="width: 100%; max-height: 100%; height: 600px"></iframe>
+  <iframe src="https://wherebus.firebaseapp.com/parking.html" style="width: 100%; max-height: 100%; height: 600px"></iframe>
 </section>
 <section>
 
@@ -184,9 +184,7 @@
   <h3>Realtime data is game state</h3>
   <a href="https://mmoasteroids.firebaseapp.com">https://mmoasteroids.firebaseapp.com</a>
 
-  <iframe src="https://mmoasteroids.firebaseapp.com/embed.html" scrolling="no"
-          style="background-color: #fff; overflow: hidden; width: 100%; max-height: 100%; height: 500px;">
-  </iframe>
+  <a href="https://mmoasteroids.firebaseapp.com"><img src="img/mmoasteroids.gif"></a>
 </section>
 
 
@@ -247,7 +245,62 @@ ref.on("value", function (snapshot) {
   </div>
 </section>
 
-<section>
+  <section>
+    <h2>Some Android code</h2>
+    <br/>
+
+    <div>
+      <h4>Write Data</h4>
+<pre style="margin-bottom:-50px;"><code data-trim class="java">
+Firebase.setAndroidContext(this);
+Firebase ref =
+  new Firebase("https://hai.firebaseio-demo.com/");
+
+ref.setValue("Hello, Developers!");
+</code></pre>
+    </div>
+    <br/><br/>
+
+    <div>
+      <h4>Read Data</h4>
+<pre><code data-trim class="java">
+ref.addValueEventListener(new ValueEventListener() {
+  @Override public void onCancelled(FirebaseError e) { }
+
+  @Override
+  public void onDataChange(DataSnapshot snap) {
+    Log.v(TAG, snap.getValue());
+  }
+});
+</code></pre>
+    </div>
+  </section>
+
+  <section>
+    <h2>Some Swift code</h2>
+    <br/>
+
+    <div>
+      <h4>Write Data</h4>
+<pre style="margin-bottom:-50px;"><code data-trim class="swift">
+var ref = Firebase(url:"https://hai.firebaseio-demo.com/")
+
+ref.setValue("Hello, Developers!")
+</code></pre>
+    </div>
+    <br/><br/>
+
+    <div>
+      <h4>Read Data</h4>
+<pre><code data-trim class="swift">
+ref.observeEventType(.Value, withBlock: {
+  snap in
+  println(snap.value)
+})
+</code></pre>
+    </div>
+  </section>
+  <section>
   <h3>Works with</h3>
 
   <img src="img/frameworks-transparent.png" style="background: none; box-shadow: none; border: none;">
@@ -260,8 +313,8 @@ ref.on("value", function (snapshot) {
   <ul>
     <li>Founded in 2011</li>
     <li class="fragment">Acquired by Google in October 2014</li>
-    <li class="fragment"><span id="current-devs">160,000</span> developers</li>
-    <li class="fragment">Over 1,000,000 concurrent connections</li>
+    <li class="fragment"><span id="current-devs">250,000</span> developers</li>
+    <li class="fragment">Over 2,000,000 concurrent connections</li>
   </ul>
   <script>
     $(document).ready(function () {
@@ -352,10 +405,10 @@ ref.on("value", function (snapshot) {
     - What realtime is
     - Why it's hard
     - How Firebase makes it easy
-    - Live coding
     - Real world examples
   </script>
 </section>
+  <!-- - Live coding-->
 
 
 <section>
@@ -364,7 +417,7 @@ ref.on("value", function (snapshot) {
     <li>Slides: <a href="https://mimming.com/presos/firebase-overview">mimming.com/presos/firebase-overview</a>
     </li>
     <li>Try Firebase: <a href="https://www.firebase.com">firebase.com</a></li>
-    <li>Chat Example: <a href="https://github.com/mimming/firebase-tiny-chat">github.com/mimming/firebase-tiny-chat</a><br/></li>
+    <!--<li>Chat Example: <a href="https://github.com/mimming/firebase-tiny-chat">github.com/mimming/firebase-tiny-chat</a><br/></li>-->
     <li>Me on Twitter: <a href="https://twitter.com/MimmingCodes">@MimmingCodes</a></li>
   </ul>
 
