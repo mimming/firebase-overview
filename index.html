@@ -145,6 +145,7 @@
     - What realtime is
     - Why it's hard
     - How Firebase makes it easy
+    - Codelab!
     - Real world examples
     - Q&A
   </script>
@@ -161,12 +162,12 @@
 </section>
 
 <section>
-  <h3>Realtime is where your can park</h3>
-  <a href="https://wherebus.firebaseapp.com/parking.html">https://wherebus.firebaseapp.com/parking.html</a>
+  <h3>Realtime is where your bus is</h3>
+  <a href="https://wherebus.firebaseapp.com/">https://wherebus.firebaseapp.com/</a>
   <br/>
   <br/>
 
-  <iframe src="https://wherebus.firebaseapp.com/parking.html" style="width: 100%; max-height: 100%; height: 600px"></iframe>
+  <iframe src="https://wherebus.firebaseapp.com/" style="width: 100%; max-height: 100%; height: 600px"></iframe>
 </section>
 <section>
 
@@ -244,6 +245,30 @@ ref.on("value", function (snapshot) {
 </code></pre>
   </div>
 </section>
+  <section>
+    <h2>Some Swift code</h2>
+    <br/>
+
+    <div>
+      <h4>Write Data</h4>
+<pre style="margin-bottom:-50px;"><code data-trim class="swift">
+var ref = Firebase(url:"https://hai.firebaseio-demo.com/")
+
+ref.setValue("Hello, Developers!")
+</code></pre>
+    </div>
+    <br/><br/>
+
+    <div>
+      <h4>Read Data</h4>
+<pre><code data-trim class="swift">
+ref.observeEventType(.Value, withBlock: {
+  snap in
+  println(snap.value)
+})
+</code></pre>
+    </div>
+  </section>
 
   <section>
     <h2>Some Android code</h2>
@@ -277,30 +302,6 @@ ref.addValueEventListener(new ValueEventListener() {
   </section>
 
   <section>
-    <h2>Some Swift code</h2>
-    <br/>
-
-    <div>
-      <h4>Write Data</h4>
-<pre style="margin-bottom:-50px;"><code data-trim class="swift">
-var ref = Firebase(url:"https://hai.firebaseio-demo.com/")
-
-ref.setValue("Hello, Developers!")
-</code></pre>
-    </div>
-    <br/><br/>
-
-    <div>
-      <h4>Read Data</h4>
-<pre><code data-trim class="swift">
-ref.observeEventType(.Value, withBlock: {
-  snap in
-  println(snap.value)
-})
-</code></pre>
-    </div>
-  </section>
-  <section>
   <h3>Works with</h3>
 
   <img src="img/frameworks-transparent.png" style="background: none; box-shadow: none; border: none;">
@@ -328,17 +329,8 @@ ref.observeEventType(.Value, withBlock: {
 </section>
 
 <section>
-  <h2>We <3 developers</h2>
-  <br/>
-  <img src="img/walterhacks.jpg"
-       style="height: 380px; border: 5px solid #bbb; border-radius: 10px; margin: 0 20px 0 0">
-  <img src="img/calhacks.jpg" style="height: 380px; border: 5px solid #bbb; border-radius: 10px; margin: 0 0 0 20px">
-</section>
-
-<section>
-  <div class="center">
-    <h2 style="margin-top: 100px;">Let's write some code!</h2>
-  </div>
+  <h2 style="margin-top: 100px;">Let's write some code!</h2>
+  Codelab lives here: <a href="http://tinyurl.com/firecodelab">http://tinyurl.com/firecodelab</a>
 </section>
 
 
@@ -405,6 +397,7 @@ ref.observeEventType(.Value, withBlock: {
     - What realtime is
     - Why it's hard
     - How Firebase makes it easy
+    - Codelab!
     - Real world examples
   </script>
 </section>
